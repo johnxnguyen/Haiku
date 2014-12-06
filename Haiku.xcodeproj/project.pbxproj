@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE8608751A324DD500731F0C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608701A324DD500731F0C /* Bolts.framework */; };
+		EE8608761A324DD500731F0C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608711A324DD500731F0C /* FacebookSDK.framework */; };
+		EE8608771A324DD500731F0C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608721A324DD500731F0C /* Parse.framework */; };
+		EE8608781A324DD500731F0C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */; };
+		EE8608791A324DD500731F0C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608741A324DD500731F0C /* ParseUI.framework */; };
 		EEE288941A324CF6000E5E7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE288931A324CF6000E5E7B /* main.m */; };
 		EEE288971A324CF6000E5E7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE288961A324CF6000E5E7B /* AppDelegate.m */; };
 		EEE2889A1A324CF6000E5E7B /* Haiku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEE288981A324CF6000E5E7B /* Haiku.xcdatamodeld */; };
@@ -28,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE8608701A324DD500731F0C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		EE8608711A324DD500731F0C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
+		EE8608721A324DD500731F0C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Parse.framework; sourceTree = "<group>"; };
+		EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		EE8608741A324DD500731F0C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseUI.framework; sourceTree = "<group>"; };
 		EEE2888E1A324CF6000E5E7B /* Haiku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haiku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE288921A324CF6000E5E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE288931A324CF6000E5E7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +59,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8608751A324DD500731F0C /* Bolts.framework in Frameworks */,
+				EE8608771A324DD500731F0C /* Parse.framework in Frameworks */,
+				EE8608791A324DD500731F0C /* ParseUI.framework in Frameworks */,
+				EE8608781A324DD500731F0C /* ParseFacebookUtils.framework in Frameworks */,
+				EE8608761A324DD500731F0C /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE86086F1A324D7200731F0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE8608701A324DD500731F0C /* Bolts.framework */,
+				EE8608711A324DD500731F0C /* FacebookSDK.framework */,
+				EE8608721A324DD500731F0C /* Parse.framework */,
+				EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */,
+				EE8608741A324DD500731F0C /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			path = HaikuTests;
+			sourceTree = "<group>";
+		};
 		EEE288851A324CF6000E5E7B = {
 			isa = PBXGroup;
 			children = (
 				EEE288901A324CF6000E5E7B /* Haiku */,
+				EE86086F1A324D7200731F0C /* Frameworks */,
 				EEE288AD1A324CF6000E5E7B /* HaikuTests */,
 				EEE2888F1A324CF6000E5E7B /* Products */,
 			);
@@ -88,9 +117,6 @@
 				EEE2889B1A324CF6000E5E7B /* ViewController.h */,
 				EEE2889C1A324CF6000E5E7B /* ViewController.m */,
 				EEE2889E1A324CF6000E5E7B /* Main.storyboard */,
-				EEE288A11A324CF6000E5E7B /* Images.xcassets */,
-				EEE288A31A324CF6000E5E7B /* LaunchScreen.xib */,
-				EEE288981A324CF6000E5E7B /* Haiku.xcdatamodeld */,
 				EEE288911A324CF6000E5E7B /* Supporting Files */,
 			);
 			path = Haiku;
@@ -99,6 +125,9 @@
 		EEE288911A324CF6000E5E7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EEE288A11A324CF6000E5E7B /* Images.xcassets */,
+				EEE288981A324CF6000E5E7B /* Haiku.xcdatamodeld */,
+				EEE288A31A324CF6000E5E7B /* LaunchScreen.xib */,
 				EEE288921A324CF6000E5E7B /* Info.plist */,
 				EEE288931A324CF6000E5E7B /* main.m */,
 			);
@@ -171,6 +200,7 @@
 				TargetAttributes = {
 					EEE2888D1A324CF6000E5E7B = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = WAPLF5F36A;
 					};
 					EEE288A91A324CF6000E5E7B = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -349,6 +379,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/johnnguyen/Documents/PROJECTS/XCode/2015/Haiku/Haiku/Frameworks,
+				);
 				INFOPLIST_FILE = Haiku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +394,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/johnnguyen/Documents/PROJECTS/XCode/2015/Haiku/Haiku/Frameworks,
+				);
 				INFOPLIST_FILE = Haiku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +458,7 @@
 				EEE288B61A324CF6000E5E7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEE288B71A324CF6000E5E7B /* Build configuration list for PBXNativeTarget "HaikuTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +467,7 @@
 				EEE288B91A324CF6000E5E7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
