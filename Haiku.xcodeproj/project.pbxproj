@@ -1,1124 +1,605 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>01DFC91BABBC5A13CB05197A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7D3C9EBB97A16C161ACF30E7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0B86795C89D87A4B3A39F66E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63D59EECA77E71E1118008FD</string>
-				<string>72181EF28A4D6823DFD4DE9C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63D59EECA77E71E1118008FD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Haiku.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Haiku/Pods-Haiku.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>72181EF28A4D6823DFD4DE9C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Haiku.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Haiku/Pods-Haiku.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D3C9EBB97A16C161ACF30E7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Haiku.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9D0C67037A8BF854CDE3D27F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Haiku/Pods-Haiku-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E2E47DB0F8D2EB7AC35F0A98</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EE86086F1A324D7200731F0C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EE8608701A324DD500731F0C</string>
-				<string>EE8608711A324DD500731F0C</string>
-				<string>EE8608721A324DD500731F0C</string>
-				<string>EE8608731A324DD500731F0C</string>
-				<string>EE8608741A324DD500731F0C</string>
-				<string>7D3C9EBB97A16C161ACF30E7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>path</key>
-			<string>HaikuTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE8608701A324DD500731F0C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Bolts.framework</string>
-			<key>path</key>
-			<string>../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Bolts.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE8608711A324DD500731F0C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>FacebookSDK.framework</string>
-			<key>path</key>
-			<string>../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/FacebookSDK.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE8608721A324DD500731F0C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Parse.framework</string>
-			<key>path</key>
-			<string>../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Parse.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE8608731A324DD500731F0C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ParseFacebookUtils.framework</string>
-			<key>path</key>
-			<string>../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseFacebookUtils.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE8608741A324DD500731F0C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ParseUI.framework</string>
-			<key>path</key>
-			<string>../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseUI.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE8608751A324DD500731F0C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EE8608701A324DD500731F0C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE8608761A324DD500731F0C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EE8608711A324DD500731F0C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE8608771A324DD500731F0C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EE8608721A324DD500731F0C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE8608781A324DD500731F0C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EE8608731A324DD500731F0C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE8608791A324DD500731F0C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EE8608741A324DD500731F0C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE288851A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE288901A324CF6000E5E7B</string>
-				<string>EE86086F1A324D7200731F0C</string>
-				<string>EEE288AD1A324CF6000E5E7B</string>
-				<string>EEE2888F1A324CF6000E5E7B</string>
-				<string>0B86795C89D87A4B3A39F66E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288861A324CF6000E5E7B</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0610</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>John Nguyen</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>EEE2888D1A324CF6000E5E7B</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-						<key>DevelopmentTeam</key>
-						<string>WAPLF5F36A</string>
-					</dict>
-					<key>EEE288A91A324CF6000E5E7B</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-						<key>TestTargetID</key>
-						<string>EEE2888D1A324CF6000E5E7B</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>EEE288891A324CF6000E5E7B</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>EEE288851A324CF6000E5E7B</string>
-			<key>productRefGroup</key>
-			<string>EEE2888F1A324CF6000E5E7B</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>EEE2888D1A324CF6000E5E7B</string>
-				<string>EEE288A91A324CF6000E5E7B</string>
-			</array>
-		</dict>
-		<key>EEE288891A324CF6000E5E7B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EEE288B21A324CF6000E5E7B</string>
-				<string>EEE288B31A324CF6000E5E7B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EEE2888A1A324CF6000E5E7B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EEE288971A324CF6000E5E7B</string>
-				<string>EEE2889A1A324CF6000E5E7B</string>
-				<string>EEE2889D1A324CF6000E5E7B</string>
-				<string>EEE288941A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EEE2888B1A324CF6000E5E7B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EE8608751A324DD500731F0C</string>
-				<string>EE8608771A324DD500731F0C</string>
-				<string>EE8608791A324DD500731F0C</string>
-				<string>EE8608781A324DD500731F0C</string>
-				<string>EE8608761A324DD500731F0C</string>
-				<string>01DFC91BABBC5A13CB05197A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EEE2888C1A324CF6000E5E7B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EEE288A01A324CF6000E5E7B</string>
-				<string>EEE288A51A324CF6000E5E7B</string>
-				<string>EEE288A21A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EEE2888D1A324CF6000E5E7B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EEE288B41A324CF6000E5E7B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E2E47DB0F8D2EB7AC35F0A98</string>
-				<string>EEE2888A1A324CF6000E5E7B</string>
-				<string>EEE2888B1A324CF6000E5E7B</string>
-				<string>EEE2888C1A324CF6000E5E7B</string>
-				<string>9D0C67037A8BF854CDE3D27F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Haiku</string>
-			<key>productName</key>
-			<string>Haiku</string>
-			<key>productReference</key>
-			<string>EEE2888E1A324CF6000E5E7B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>EEE2888E1A324CF6000E5E7B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Haiku.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EEE2888F1A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE2888E1A324CF6000E5E7B</string>
-				<string>EEE288AA1A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288901A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE288951A324CF6000E5E7B</string>
-				<string>EEE288961A324CF6000E5E7B</string>
-				<string>EEE2889B1A324CF6000E5E7B</string>
-				<string>EEE2889C1A324CF6000E5E7B</string>
-				<string>EEE2889E1A324CF6000E5E7B</string>
-				<string>EEE288911A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Haiku</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288911A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE288A11A324CF6000E5E7B</string>
-				<string>EEE288981A324CF6000E5E7B</string>
-				<string>EEE288A31A324CF6000E5E7B</string>
-				<string>EEE288921A324CF6000E5E7B</string>
-				<string>EEE288931A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288921A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288931A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288941A324CF6000E5E7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEE288931A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE288951A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288961A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288971A324CF6000E5E7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEE288961A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE288981A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE288991A324CF6000E5E7B</string>
-			</array>
-			<key>currentVersion</key>
-			<string>EEE288991A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>Haiku.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>EEE288991A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>Haiku.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE2889A1A324CF6000E5E7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEE288981A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE2889B1A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE2889C1A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE2889D1A324CF6000E5E7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEE2889C1A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE2889E1A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE2889F1A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE2889F1A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288A01A324CF6000E5E7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEE2889E1A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE288A11A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288A21A324CF6000E5E7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEE288A11A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE288A31A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE288A41A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288A41A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288A51A324CF6000E5E7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEE288A31A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE288A61A324CF6000E5E7B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EEE288B11A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EEE288A71A324CF6000E5E7B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EEE288A81A324CF6000E5E7B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EEE288A91A324CF6000E5E7B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EEE288B71A324CF6000E5E7B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EEE288A61A324CF6000E5E7B</string>
-				<string>EEE288A71A324CF6000E5E7B</string>
-				<string>EEE288A81A324CF6000E5E7B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>EEE288AC1A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>HaikuTests</string>
-			<key>productName</key>
-			<string>HaikuTests</string>
-			<key>productReference</key>
-			<string>EEE288AA1A324CF6000E5E7B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>EEE288AA1A324CF6000E5E7B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>HaikuTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EEE288AB1A324CF6000E5E7B</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>EEE288861A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>EEE2888D1A324CF6000E5E7B</string>
-			<key>remoteInfo</key>
-			<string>Haiku</string>
-		</dict>
-		<key>EEE288AC1A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>EEE2888D1A324CF6000E5E7B</string>
-			<key>targetProxy</key>
-			<string>EEE288AB1A324CF6000E5E7B</string>
-		</dict>
-		<key>EEE288AD1A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE288B01A324CF6000E5E7B</string>
-				<string>EEE288AE1A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>HaikuTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288AE1A324CF6000E5E7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EEE288AF1A324CF6000E5E7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288AF1A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288B01A324CF6000E5E7B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HaikuTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE288B11A324CF6000E5E7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEE288B01A324CF6000E5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEE288B21A324CF6000E5E7B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EEE288B31A324CF6000E5E7B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EEE288B41A324CF6000E5E7B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EEE288B51A324CF6000E5E7B</string>
-				<string>EEE288B61A324CF6000E5E7B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EEE288B51A324CF6000E5E7B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>63D59EECA77E71E1118008FD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Users/johnnguyen/Documents/PROJECTS/XCode/2015/Haiku/Haiku/Frameworks</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>Haiku/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EEE288B61A324CF6000E5E7B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>72181EF28A4D6823DFD4DE9C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Users/johnnguyen/Documents/PROJECTS/XCode/2015/Haiku/Haiku/Frameworks</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>Haiku/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EEE288B71A324CF6000E5E7B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EEE288B81A324CF6000E5E7B</string>
-				<string>EEE288B91A324CF6000E5E7B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EEE288B81A324CF6000E5E7B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>HaikuTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Haiku.app/Haiku</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EEE288B91A324CF6000E5E7B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>HaikuTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Haiku.app/Haiku</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>EEE288861A324CF6000E5E7B</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01DFC91BABBC5A13CB05197A /* libPods-Haiku.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3C9EBB97A16C161ACF30E7 /* libPods-Haiku.a */; };
+		EE11FFD61A385AF700ADBC2D /* HKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11FFD51A385AF700ADBC2D /* HKConstants.m */; };
+		EE11FFD91A3866B200ADBC2D /* HKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11FFD81A3866B200ADBC2D /* HKLoginViewController.m */; };
+		EE11FFDC1A38675D00ADBC2D /* HKRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11FFDB1A38675D00ADBC2D /* HKRegisterViewController.m */; };
+		EE1517981A3C60520053AC9E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1517971A3C60520053AC9E /* SWRevealViewController.m */; };
+		EE15179F1A3C61170053AC9E /* HKInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE15179E1A3C61170053AC9E /* HKInboxViewController.m */; };
+		EE1517A21A3C61450053AC9E /* HKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1517A11A3C61450053AC9E /* HKMenuViewController.m */; };
+		EE8608761A324DD500731F0C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608711A324DD500731F0C /* FacebookSDK.framework */; };
+		EE8608771A324DD500731F0C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608721A324DD500731F0C /* Parse.framework */; };
+		EE8608781A324DD500731F0C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */; };
+		EE8608791A324DD500731F0C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608741A324DD500731F0C /* ParseUI.framework */; };
+		EEE288941A324CF6000E5E7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE288931A324CF6000E5E7B /* main.m */; };
+		EEE288971A324CF6000E5E7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE288961A324CF6000E5E7B /* AppDelegate.m */; };
+		EEE2889A1A324CF6000E5E7B /* Haiku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEE288981A324CF6000E5E7B /* Haiku.xcdatamodeld */; };
+		EEE288A01A324CF6000E5E7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE2889E1A324CF6000E5E7B /* Main.storyboard */; };
+		EEE288A21A324CF6000E5E7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE288A11A324CF6000E5E7B /* Images.xcassets */; };
+		EEE288A51A324CF6000E5E7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE288A31A324CF6000E5E7B /* LaunchScreen.xib */; };
+		EEE288B11A324CF6000E5E7B /* HaikuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE288B01A324CF6000E5E7B /* HaikuTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEE288AB1A324CF6000E5E7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE288861A324CF6000E5E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE2888D1A324CF6000E5E7B;
+			remoteInfo = Haiku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63D59EECA77E71E1118008FD /* Pods-Haiku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haiku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Haiku/Pods-Haiku.debug.xcconfig"; sourceTree = "<group>"; };
+		72181EF28A4D6823DFD4DE9C /* Pods-Haiku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haiku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Haiku/Pods-Haiku.release.xcconfig"; sourceTree = "<group>"; };
+		7D3C9EBB97A16C161ACF30E7 /* libPods-Haiku.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Haiku.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE11FFD41A385AF700ADBC2D /* HKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKConstants.h; path = Classes/HKConstants.h; sourceTree = "<group>"; };
+		EE11FFD51A385AF700ADBC2D /* HKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKConstants.m; path = Classes/HKConstants.m; sourceTree = "<group>"; };
+		EE11FFD71A3866B200ADBC2D /* HKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKLoginViewController.h; path = "Classes/View Controllers/HKLoginViewController.h"; sourceTree = "<group>"; };
+		EE11FFD81A3866B200ADBC2D /* HKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKLoginViewController.m; path = "Classes/View Controllers/HKLoginViewController.m"; sourceTree = "<group>"; };
+		EE11FFDA1A38675D00ADBC2D /* HKRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKRegisterViewController.h; path = "Classes/View Controllers/HKRegisterViewController.h"; sourceTree = "<group>"; };
+		EE11FFDB1A38675D00ADBC2D /* HKRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKRegisterViewController.m; path = "Classes/View Controllers/HKRegisterViewController.m"; sourceTree = "<group>"; };
+		EE11FFDD1A38773A00ADBC2D /* Haiku-Prefix-Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Haiku-Prefix-Header.pch"; sourceTree = "<group>"; };
+		EE1517961A3C60520053AC9E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Classes/View Controllers/SWRevealViewController.h"; sourceTree = "<group>"; };
+		EE1517971A3C60520053AC9E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Classes/View Controllers/SWRevealViewController.m"; sourceTree = "<group>"; };
+		EE15179D1A3C61170053AC9E /* HKInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKInboxViewController.h; path = "Classes/View Controllers/HKInboxViewController.h"; sourceTree = "<group>"; };
+		EE15179E1A3C61170053AC9E /* HKInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKInboxViewController.m; path = "Classes/View Controllers/HKInboxViewController.m"; sourceTree = "<group>"; };
+		EE1517A01A3C61450053AC9E /* HKMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKMenuViewController.h; path = "Classes/View Controllers/HKMenuViewController.h"; sourceTree = "<group>"; };
+		EE1517A11A3C61450053AC9E /* HKMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKMenuViewController.m; path = "Classes/View Controllers/HKMenuViewController.m"; sourceTree = "<group>"; };
+		EE8608701A324DD500731F0C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		EE8608711A324DD500731F0C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
+		EE8608721A324DD500731F0C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Parse.framework; sourceTree = "<group>"; };
+		EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		EE8608741A324DD500731F0C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseUI.framework; sourceTree = "<group>"; };
+		EEE2888E1A324CF6000E5E7B /* Haiku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haiku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE288921A324CF6000E5E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE288931A324CF6000E5E7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEE288951A324CF6000E5E7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEE288961A324CF6000E5E7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEE288991A324CF6000E5E7B /* Haiku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Haiku.xcdatamodel; sourceTree = "<group>"; };
+		EEE2889F1A324CF6000E5E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEE288A11A324CF6000E5E7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EEE288A41A324CF6000E5E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EEE288AA1A324CF6000E5E7B /* HaikuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaikuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE288AF1A324CF6000E5E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE288B01A324CF6000E5E7B /* HaikuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaikuTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEE2888B1A324CF6000E5E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8608771A324DD500731F0C /* Parse.framework in Frameworks */,
+				EE8608791A324DD500731F0C /* ParseUI.framework in Frameworks */,
+				EE8608781A324DD500731F0C /* ParseFacebookUtils.framework in Frameworks */,
+				EE8608761A324DD500731F0C /* FacebookSDK.framework in Frameworks */,
+				01DFC91BABBC5A13CB05197A /* libPods-Haiku.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE288A71A324CF6000E5E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B86795C89D87A4B3A39F66E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63D59EECA77E71E1118008FD /* Pods-Haiku.debug.xcconfig */,
+				72181EF28A4D6823DFD4DE9C /* Pods-Haiku.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE1517991A3C60590053AC9E /* Reveal View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE1517961A3C60520053AC9E /* SWRevealViewController.h */,
+				EE1517971A3C60520053AC9E /* SWRevealViewController.m */,
+			);
+			name = "Reveal View Controller";
+			sourceTree = "<group>";
+		};
+		EE1517A31A3C617B0053AC9E /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				EE1517A01A3C61450053AC9E /* HKMenuViewController.h */,
+				EE1517A11A3C61450053AC9E /* HKMenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		EE1517A41A3C61870053AC9E /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				EE15179D1A3C61170053AC9E /* HKInboxViewController.h */,
+				EE15179E1A3C61170053AC9E /* HKInboxViewController.m */,
+			);
+			name = Inbox;
+			sourceTree = "<group>";
+		};
+		EE2026B21A34BDA8009731FF /* Login & Register */ = {
+			isa = PBXGroup;
+			children = (
+				EE11FFD71A3866B200ADBC2D /* HKLoginViewController.h */,
+				EE11FFD81A3866B200ADBC2D /* HKLoginViewController.m */,
+				EE11FFDA1A38675D00ADBC2D /* HKRegisterViewController.h */,
+				EE11FFDB1A38675D00ADBC2D /* HKRegisterViewController.m */,
+			);
+			name = "Login & Register";
+			sourceTree = "<group>";
+		};
+		EE86086F1A324D7200731F0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE8608701A324DD500731F0C /* Bolts.framework */,
+				EE8608711A324DD500731F0C /* FacebookSDK.framework */,
+				EE8608721A324DD500731F0C /* Parse.framework */,
+				EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */,
+				EE8608741A324DD500731F0C /* ParseUI.framework */,
+				7D3C9EBB97A16C161ACF30E7 /* libPods-Haiku.a */,
+			);
+			name = Frameworks;
+			path = HaikuTests;
+			sourceTree = "<group>";
+		};
+		EEE288851A324CF6000E5E7B = {
+			isa = PBXGroup;
+			children = (
+				EEE288901A324CF6000E5E7B /* Haiku */,
+				EE86086F1A324D7200731F0C /* Frameworks */,
+				EEE288AD1A324CF6000E5E7B /* HaikuTests */,
+				EEE2888F1A324CF6000E5E7B /* Products */,
+				0B86795C89D87A4B3A39F66E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EEE2888F1A324CF6000E5E7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2888E1A324CF6000E5E7B /* Haiku.app */,
+				EEE288AA1A324CF6000E5E7B /* HaikuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEE288901A324CF6000E5E7B /* Haiku */ = {
+			isa = PBXGroup;
+			children = (
+				EEE288951A324CF6000E5E7B /* AppDelegate.h */,
+				EEE288961A324CF6000E5E7B /* AppDelegate.m */,
+				EEE2889E1A324CF6000E5E7B /* Main.storyboard */,
+				EE2026B21A34BDA8009731FF /* Login & Register */,
+				EE1517A31A3C617B0053AC9E /* Menu */,
+				EE1517A41A3C61870053AC9E /* Inbox */,
+				EE1517991A3C60590053AC9E /* Reveal View Controller */,
+				EEE288911A324CF6000E5E7B /* Supporting Files */,
+			);
+			path = Haiku;
+			sourceTree = "<group>";
+		};
+		EEE288911A324CF6000E5E7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEE288A11A324CF6000E5E7B /* Images.xcassets */,
+				EEE288981A324CF6000E5E7B /* Haiku.xcdatamodeld */,
+				EEE288A31A324CF6000E5E7B /* LaunchScreen.xib */,
+				EEE288921A324CF6000E5E7B /* Info.plist */,
+				EEE288931A324CF6000E5E7B /* main.m */,
+				EE11FFD41A385AF700ADBC2D /* HKConstants.h */,
+				EE11FFD51A385AF700ADBC2D /* HKConstants.m */,
+				EE11FFDD1A38773A00ADBC2D /* Haiku-Prefix-Header.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEE288AD1A324CF6000E5E7B /* HaikuTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEE288B01A324CF6000E5E7B /* HaikuTests.m */,
+				EEE288AE1A324CF6000E5E7B /* Supporting Files */,
+			);
+			path = HaikuTests;
+			sourceTree = "<group>";
+		};
+		EEE288AE1A324CF6000E5E7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEE288AF1A324CF6000E5E7B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEE2888D1A324CF6000E5E7B /* Haiku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE288B41A324CF6000E5E7B /* Build configuration list for PBXNativeTarget "Haiku" */;
+			buildPhases = (
+				E2E47DB0F8D2EB7AC35F0A98 /* Check Pods Manifest.lock */,
+				EEE2888A1A324CF6000E5E7B /* Sources */,
+				EEE2888B1A324CF6000E5E7B /* Frameworks */,
+				EEE2888C1A324CF6000E5E7B /* Resources */,
+				9D0C67037A8BF854CDE3D27F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Haiku;
+			productName = Haiku;
+			productReference = EEE2888E1A324CF6000E5E7B /* Haiku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEE288A91A324CF6000E5E7B /* HaikuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE288B71A324CF6000E5E7B /* Build configuration list for PBXNativeTarget "HaikuTests" */;
+			buildPhases = (
+				EEE288A61A324CF6000E5E7B /* Sources */,
+				EEE288A71A324CF6000E5E7B /* Frameworks */,
+				EEE288A81A324CF6000E5E7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE288AC1A324CF6000E5E7B /* PBXTargetDependency */,
+			);
+			name = HaikuTests;
+			productName = HaikuTests;
+			productReference = EEE288AA1A324CF6000E5E7B /* HaikuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEE288861A324CF6000E5E7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "John Nguyen";
+				TargetAttributes = {
+					EEE2888D1A324CF6000E5E7B = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = WAPLF5F36A;
+					};
+					EEE288A91A324CF6000E5E7B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = EEE2888D1A324CF6000E5E7B;
+					};
+				};
+			};
+			buildConfigurationList = EEE288891A324CF6000E5E7B /* Build configuration list for PBXProject "Haiku" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEE288851A324CF6000E5E7B;
+			productRefGroup = EEE2888F1A324CF6000E5E7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEE2888D1A324CF6000E5E7B /* Haiku */,
+				EEE288A91A324CF6000E5E7B /* HaikuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEE2888C1A324CF6000E5E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE288A01A324CF6000E5E7B /* Main.storyboard in Resources */,
+				EEE288A51A324CF6000E5E7B /* LaunchScreen.xib in Resources */,
+				EEE288A21A324CF6000E5E7B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE288A81A324CF6000E5E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D0C67037A8BF854CDE3D27F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Haiku/Pods-Haiku-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E47DB0F8D2EB7AC35F0A98 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEE2888A1A324CF6000E5E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1517981A3C60520053AC9E /* SWRevealViewController.m in Sources */,
+				EE11FFD61A385AF700ADBC2D /* HKConstants.m in Sources */,
+				EE1517A21A3C61450053AC9E /* HKMenuViewController.m in Sources */,
+				EE11FFDC1A38675D00ADBC2D /* HKRegisterViewController.m in Sources */,
+				EEE288971A324CF6000E5E7B /* AppDelegate.m in Sources */,
+				EEE2889A1A324CF6000E5E7B /* Haiku.xcdatamodeld in Sources */,
+				EE11FFD91A3866B200ADBC2D /* HKLoginViewController.m in Sources */,
+				EEE288941A324CF6000E5E7B /* main.m in Sources */,
+				EE15179F1A3C61170053AC9E /* HKInboxViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE288A61A324CF6000E5E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE288B11A324CF6000E5E7B /* HaikuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEE288AC1A324CF6000E5E7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEE2888D1A324CF6000E5E7B /* Haiku */;
+			targetProxy = EEE288AB1A324CF6000E5E7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEE2889E1A324CF6000E5E7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE2889F1A324CF6000E5E7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEE288A31A324CF6000E5E7B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE288A41A324CF6000E5E7B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEE288B21A324CF6000E5E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEE288B31A324CF6000E5E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEE288B51A324CF6000E5E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D59EECA77E71E1118008FD /* Pods-Haiku.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/johnnguyen/Documents/PROJECTS/XCode/2015/Haiku/Haiku/Frameworks,
+				);
+				GCC_PREFIX_HEADER = "Haiku/Haiku-Prefix-Header.pch";
+				INFOPLIST_FILE = Haiku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EEE288B61A324CF6000E5E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72181EF28A4D6823DFD4DE9C /* Pods-Haiku.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/johnnguyen/Documents/PROJECTS/XCode/2015/Haiku/Haiku/Frameworks,
+				);
+				GCC_PREFIX_HEADER = "Haiku/Haiku-Prefix-Header.pch";
+				INFOPLIST_FILE = Haiku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EEE288B81A324CF6000E5E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HaikuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Haiku.app/Haiku";
+			};
+			name = Debug;
+		};
+		EEE288B91A324CF6000E5E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HaikuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Haiku.app/Haiku";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEE288891A324CF6000E5E7B /* Build configuration list for PBXProject "Haiku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE288B21A324CF6000E5E7B /* Debug */,
+				EEE288B31A324CF6000E5E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE288B41A324CF6000E5E7B /* Build configuration list for PBXNativeTarget "Haiku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE288B51A324CF6000E5E7B /* Debug */,
+				EEE288B61A324CF6000E5E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE288B71A324CF6000E5E7B /* Build configuration list for PBXNativeTarget "HaikuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE288B81A324CF6000E5E7B /* Debug */,
+				EEE288B91A324CF6000E5E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EEE288981A324CF6000E5E7B /* Haiku.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EEE288991A324CF6000E5E7B /* Haiku.xcdatamodel */,
+			);
+			currentVersion = EEE288991A324CF6000E5E7B /* Haiku.xcdatamodel */;
+			path = Haiku.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EEE288861A324CF6000E5E7B /* Project object */;
+}
