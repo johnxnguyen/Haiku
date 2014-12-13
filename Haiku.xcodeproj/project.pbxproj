@@ -8,16 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		01DFC91BABBC5A13CB05197A /* libPods-Haiku.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3C9EBB97A16C161ACF30E7 /* libPods-Haiku.a */; };
+		EE0B55311A3CD11D008365C9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B552B1A3CD11D008365C9 /* Bolts.framework */; };
+		EE0B55321A3CD11D008365C9 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B552C1A3CD11D008365C9 /* FacebookSDK.framework */; };
+		EE0B55331A3CD11D008365C9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B552D1A3CD11D008365C9 /* Parse.framework */; };
+		EE0B55341A3CD11D008365C9 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B552E1A3CD11D008365C9 /* ParseCrashReporting.framework */; };
+		EE0B55351A3CD11D008365C9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B552F1A3CD11D008365C9 /* ParseFacebookUtils.framework */; };
+		EE0B55361A3CD11D008365C9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B55301A3CD11D008365C9 /* ParseUI.framework */; };
+		EE0B55381A3CD13A008365C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B55371A3CD13A008365C9 /* libsqlite3.dylib */; };
+		EE0B553C1A3CD76D008365C9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B553B1A3CD76D008365C9 /* AudioToolbox.framework */; };
+		EE0B553E1A3CD79C008365C9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B553D1A3CD79C008365C9 /* CFNetwork.framework */; };
+		EE0B55401A3CD7A4008365C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B553F1A3CD7A4008365C9 /* CoreGraphics.framework */; };
+		EE0B55421A3CD7AA008365C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B55411A3CD7AA008365C9 /* CoreLocation.framework */; };
+		EE0B55441A3CD7B1008365C9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B55431A3CD7B1008365C9 /* MobileCoreServices.framework */; };
+		EE0B55461A3CD7B7008365C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B55451A3CD7B7008365C9 /* QuartzCore.framework */; };
+		EE0B55481A3CD7BC008365C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B55471A3CD7BC008365C9 /* Security.framework */; };
+		EE0B554A1A3CD7C3008365C9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B55491A3CD7C3008365C9 /* StoreKit.framework */; };
+		EE0B554C1A3CD7C9008365C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B554B1A3CD7C9008365C9 /* SystemConfiguration.framework */; };
+		EE0B554E1A3CD7D1008365C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B554D1A3CD7D1008365C9 /* libz.dylib */; };
 		EE11FFD61A385AF700ADBC2D /* HKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11FFD51A385AF700ADBC2D /* HKConstants.m */; };
 		EE11FFD91A3866B200ADBC2D /* HKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11FFD81A3866B200ADBC2D /* HKLoginViewController.m */; };
 		EE11FFDC1A38675D00ADBC2D /* HKRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11FFDB1A38675D00ADBC2D /* HKRegisterViewController.m */; };
 		EE1517981A3C60520053AC9E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1517971A3C60520053AC9E /* SWRevealViewController.m */; };
 		EE15179F1A3C61170053AC9E /* HKInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE15179E1A3C61170053AC9E /* HKInboxViewController.m */; };
 		EE1517A21A3C61450053AC9E /* HKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1517A11A3C61450053AC9E /* HKMenuViewController.m */; };
-		EE8608761A324DD500731F0C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608711A324DD500731F0C /* FacebookSDK.framework */; };
-		EE8608771A324DD500731F0C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608721A324DD500731F0C /* Parse.framework */; };
-		EE8608781A324DD500731F0C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */; };
-		EE8608791A324DD500731F0C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8608741A324DD500731F0C /* ParseUI.framework */; };
 		EEE288941A324CF6000E5E7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE288931A324CF6000E5E7B /* main.m */; };
 		EEE288971A324CF6000E5E7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE288961A324CF6000E5E7B /* AppDelegate.m */; };
 		EEE2889A1A324CF6000E5E7B /* Haiku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEE288981A324CF6000E5E7B /* Haiku.xcdatamodeld */; };
@@ -41,6 +54,24 @@
 		63D59EECA77E71E1118008FD /* Pods-Haiku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haiku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Haiku/Pods-Haiku.debug.xcconfig"; sourceTree = "<group>"; };
 		72181EF28A4D6823DFD4DE9C /* Pods-Haiku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haiku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Haiku/Pods-Haiku.release.xcconfig"; sourceTree = "<group>"; };
 		7D3C9EBB97A16C161ACF30E7 /* libPods-Haiku.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Haiku.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0B552B1A3CD11D008365C9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		EE0B552C1A3CD11D008365C9 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
+		EE0B552D1A3CD11D008365C9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Parse.framework; sourceTree = "<group>"; };
+		EE0B552E1A3CD11D008365C9 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseCrashReporting.framework; sourceTree = "<group>"; };
+		EE0B552F1A3CD11D008365C9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		EE0B55301A3CD11D008365C9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseUI.framework; sourceTree = "<group>"; };
+		EE0B55371A3CD13A008365C9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EE0B55391A3CD148008365C9 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		EE0B553B1A3CD76D008365C9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EE0B553D1A3CD79C008365C9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EE0B553F1A3CD7A4008365C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE0B55411A3CD7AA008365C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EE0B55431A3CD7B1008365C9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EE0B55451A3CD7B7008365C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EE0B55471A3CD7BC008365C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EE0B55491A3CD7C3008365C9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EE0B554B1A3CD7C9008365C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EE0B554D1A3CD7D1008365C9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		EE11FFD41A385AF700ADBC2D /* HKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKConstants.h; path = Classes/HKConstants.h; sourceTree = "<group>"; };
 		EE11FFD51A385AF700ADBC2D /* HKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKConstants.m; path = Classes/HKConstants.m; sourceTree = "<group>"; };
 		EE11FFD71A3866B200ADBC2D /* HKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKLoginViewController.h; path = "Classes/View Controllers/HKLoginViewController.h"; sourceTree = "<group>"; };
@@ -54,11 +85,6 @@
 		EE15179E1A3C61170053AC9E /* HKInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKInboxViewController.m; path = "Classes/View Controllers/HKInboxViewController.m"; sourceTree = "<group>"; };
 		EE1517A01A3C61450053AC9E /* HKMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKMenuViewController.h; path = "Classes/View Controllers/HKMenuViewController.h"; sourceTree = "<group>"; };
 		EE1517A11A3C61450053AC9E /* HKMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKMenuViewController.m; path = "Classes/View Controllers/HKMenuViewController.m"; sourceTree = "<group>"; };
-		EE8608701A324DD500731F0C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Bolts.framework; sourceTree = "<group>"; };
-		EE8608711A324DD500731F0C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
-		EE8608721A324DD500731F0C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/Parse.framework; sourceTree = "<group>"; };
-		EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		EE8608741A324DD500731F0C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../../../../../PROJECTS/XCode/2015/Haiku/Haiku/Frameworks/ParseUI.framework; sourceTree = "<group>"; };
 		EEE2888E1A324CF6000E5E7B /* Haiku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haiku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE288921A324CF6000E5E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE288931A324CF6000E5E7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,11 +104,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE8608771A324DD500731F0C /* Parse.framework in Frameworks */,
-				EE8608791A324DD500731F0C /* ParseUI.framework in Frameworks */,
-				EE8608781A324DD500731F0C /* ParseFacebookUtils.framework in Frameworks */,
-				EE8608761A324DD500731F0C /* FacebookSDK.framework in Frameworks */,
+				EE0B55381A3CD13A008365C9 /* libsqlite3.dylib in Frameworks */,
+				EE0B554E1A3CD7D1008365C9 /* libz.dylib in Frameworks */,
+				EE0B554C1A3CD7C9008365C9 /* SystemConfiguration.framework in Frameworks */,
+				EE0B554A1A3CD7C3008365C9 /* StoreKit.framework in Frameworks */,
+				EE0B55481A3CD7BC008365C9 /* Security.framework in Frameworks */,
+				EE0B55461A3CD7B7008365C9 /* QuartzCore.framework in Frameworks */,
+				EE0B55441A3CD7B1008365C9 /* MobileCoreServices.framework in Frameworks */,
+				EE0B55421A3CD7AA008365C9 /* CoreLocation.framework in Frameworks */,
+				EE0B55401A3CD7A4008365C9 /* CoreGraphics.framework in Frameworks */,
+				EE0B553E1A3CD79C008365C9 /* CFNetwork.framework in Frameworks */,
+				EE0B553C1A3CD76D008365C9 /* AudioToolbox.framework in Frameworks */,
 				01DFC91BABBC5A13CB05197A /* libPods-Haiku.a in Frameworks */,
+				EE0B55341A3CD11D008365C9 /* ParseCrashReporting.framework in Frameworks */,
+				EE0B55361A3CD11D008365C9 /* ParseUI.framework in Frameworks */,
+				EE0B55351A3CD11D008365C9 /* ParseFacebookUtils.framework in Frameworks */,
+				EE0B55311A3CD11D008365C9 /* Bolts.framework in Frameworks */,
+				EE0B55331A3CD11D008365C9 /* Parse.framework in Frameworks */,
+				EE0B55321A3CD11D008365C9 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,11 +185,24 @@
 		EE86086F1A324D7200731F0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE8608701A324DD500731F0C /* Bolts.framework */,
-				EE8608711A324DD500731F0C /* FacebookSDK.framework */,
-				EE8608721A324DD500731F0C /* Parse.framework */,
-				EE8608731A324DD500731F0C /* ParseFacebookUtils.framework */,
-				EE8608741A324DD500731F0C /* ParseUI.framework */,
+				EE0B554D1A3CD7D1008365C9 /* libz.dylib */,
+				EE0B554B1A3CD7C9008365C9 /* SystemConfiguration.framework */,
+				EE0B55491A3CD7C3008365C9 /* StoreKit.framework */,
+				EE0B55471A3CD7BC008365C9 /* Security.framework */,
+				EE0B55451A3CD7B7008365C9 /* QuartzCore.framework */,
+				EE0B55431A3CD7B1008365C9 /* MobileCoreServices.framework */,
+				EE0B55411A3CD7AA008365C9 /* CoreLocation.framework */,
+				EE0B553F1A3CD7A4008365C9 /* CoreGraphics.framework */,
+				EE0B553D1A3CD79C008365C9 /* CFNetwork.framework */,
+				EE0B553B1A3CD76D008365C9 /* AudioToolbox.framework */,
+				EE0B55391A3CD148008365C9 /* libstdc++.dylib */,
+				EE0B55371A3CD13A008365C9 /* libsqlite3.dylib */,
+				EE0B552B1A3CD11D008365C9 /* Bolts.framework */,
+				EE0B552C1A3CD11D008365C9 /* FacebookSDK.framework */,
+				EE0B552D1A3CD11D008365C9 /* Parse.framework */,
+				EE0B552E1A3CD11D008365C9 /* ParseCrashReporting.framework */,
+				EE0B552F1A3CD11D008365C9 /* ParseFacebookUtils.framework */,
+				EE0B55301A3CD11D008365C9 /* ParseUI.framework */,
 				7D3C9EBB97A16C161ACF30E7 /* libPods-Haiku.a */,
 			);
 			name = Frameworks;
@@ -497,10 +549,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/johnnguyen/Documents/PROJECTS/XCode/2015/Haiku/Haiku/Frameworks,
+					/Users/johnnguyen/.Trash,
+					"$(PROJECT_DIR)/Haiku/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "Haiku/Haiku-Prefix-Header.pch";
 				INFOPLIST_FILE = Haiku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-l\"Pods-Haiku-pop\"",
+					"-l\"c++\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -514,10 +572,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/johnnguyen/Documents/PROJECTS/XCode/2015/Haiku/Haiku/Frameworks,
+					/Users/johnnguyen/.Trash,
+					"$(PROJECT_DIR)/Haiku/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "Haiku/Haiku-Prefix-Header.pch";
 				INFOPLIST_FILE = Haiku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-l\"Pods-Haiku-pop\"",
+					"-l\"c++\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

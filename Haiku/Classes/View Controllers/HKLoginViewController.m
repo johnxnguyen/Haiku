@@ -29,6 +29,8 @@
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
+	NSLog(@"View did appear");
+	
 	// Already logged in?
 	if ([PFUser currentUser]) {
 		
@@ -48,6 +50,25 @@
 // LOGIN BUTTON
 //
 - (IBAction)loginButtonTapped:(UIButton *)sender {
+	
+	NSString *email = _emailTextField.text;
+	NSString *password = _passwordTextField.text;
+	
+	[PFUser logInWithUsernameInBackground:email password:password block:^(PFUser *user, NSError *error) {
+		
+		if (!error) {
+			// Proceed
+			[self performSegueWithIdentifier:@"RevealViewControllerSegue" sender:nil];
+			
+		} else {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!"
+															message:error.userInfo[@"error"]
+														   delegate:nil
+												  cancelButtonTitle:@"Ok"
+												  otherButtonTitles:nil];
+			[alert show];
+		}
+	}];
 }
 
 // FACEBOOK BUTTON
@@ -62,11 +83,13 @@
 			[self syncUserProfile];
 			
 			// Segue to inbox
+			[self performSegueWithIdentifier:@"RevealViewControllerSegue" sender:nil];
+			NSLog(@"segue called");
 			
 		} else {
 			if (error) {
 				// Error
-				NSLog(@"Error loggin in: %@", error.userInfo);
+				NSLog(@"Error logging in: %@", error.userInfo);
 				
 				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!"
 																message:@"Something went wrong. Please try again."

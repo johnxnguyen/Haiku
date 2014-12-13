@@ -25,18 +25,6 @@
 	// Set up Facebook
 	[PFFacebookUtils initializeFacebook];
 	
-	// Check for a cached FB Session
-	if ([[FBSession activeSession] state] == FBSessionStateCreatedTokenLoaded) {
-		
-		// if one, open the session silently without login UI
-		[FBSession openActiveSessionWithReadPermissions:@[@"public_profile"]
-										   allowLoginUI:NO
-									  completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
-			
-										  // Handler for session state changes
-										  [self sessionStateChanged:session state:status error:error];
-		}];
-	}
 	
 	[self setupAppAppearance];
 	
@@ -46,18 +34,7 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
 	
-	// Handling cold app starts
-	// Note this handler block should be the exact same as the handler passed to any open calls.
-//	[FBSession.activeSession setStateChangeHandler:
-//	 ^(FBSession *session, FBSessionState state, NSError *error) {
-//		 
-//		 // Retrieve the app delegate
-//		 AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
-//		 // Call the app delegate's sessionStateChanged:state:error method to handle session state changes
-//		 [appDelegate sessionStateChanged:session state:state error:error];
-//	 }];
-	
-	return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+	return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication withSession:[PFFacebookUtils session]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -79,7 +56,7 @@
 	
 	// Handle the user leaving the app while the Facebook login dialog is being shown
 	// For example: when the user presses the iOS "home" button while the login dialog is active
-	[FBAppCall handleDidBecomeActive];
+	[FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -110,60 +87,6 @@
 	// Whte status bar NOTE: "View controller-based status bar appearance” set to NO in info.plist
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 	
-}
-
-// FB SESSION HANDLER - This method will handle ALL the session state changes in the app
-//
-- (void)sessionStateChanged:(FBSession *)session state:(FBSessionState) state error:(NSError *)error
-{
-	// If the session was opened successfully
-	if (!error && state == FBSessionStateOpen){
-		NSLog(@"Session opened");
-		return;
-	}
-	if (state == FBSessionStateClosed || state == FBSessionStateClosedLoginFailed){
-		// If the session is closed
-		NSLog(@"Session closed");
-	}
-	
-	// Handle errors
-	if (error){
-		NSLog(@"Error");
-		NSString *alertText;
-		NSString *alertTitle;
-		// If the error requires people using an app to make an action outside of the app in order to recover
-		if ([FBErrorUtility shouldNotifyUserForError:error] == YES){
-			alertTitle = @"Something went wrong";
-			alertText = [FBErrorUtility userMessageForError:error];
-			[self showMessage:alertText withTitle:alertTitle];
-		} else {
-			
-			// If the user cancelled login, do nothing
-			if ([FBErrorUtility errorCategoryForError:error] == FBErrorCategoryUserCancelled) {
-				NSLog(@"User cancelled login");
-				
-				// Handle session closures that happen outside of the app
-			} else if ([FBErrorUtility errorCategoryForError:error] == FBErrorCategoryAuthenticationReopenSession){
-				alertTitle = @"Session Error";
-				alertText = @"Your current session is no longer valid. Please log in again.";
-				[self showMessage:alertText withTitle:alertTitle];
-				
-				// Here we will handle all other errors with a generic error message.
-				// We recommend you check our Handling Errors guide for more information
-				// https://developers.facebook.com/docs/ios/errors/
-			} else {
-				//Get more error information from the error
-				NSDictionary *errorInformation = [[[error.userInfo objectForKey:@"com.facebook.sdk:ParsedJSONResponseKey"] objectForKey:@"body"] objectForKey:@"error"];
-				
-				// Show the user an error message
-				alertTitle = @"Something went wrong";
-				alertText = [NSString stringWithFormat:@"Please retry. \n\n If the problem persists contact us and mention this error code: %@", [errorInformation objectForKey:@"message"]];
-				[self showMessage:alertText withTitle:alertTitle];
-			}
-		}
-		// Clear this token
-		[FBSession.activeSession closeAndClearTokenInformation];
-	}
 }
 
 // SHOW MESSAGE
