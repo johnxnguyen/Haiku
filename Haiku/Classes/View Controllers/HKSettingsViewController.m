@@ -1,23 +1,23 @@
 //
-//  HKInboxViewController.m
+//  HKSettingsViewController.m
 //  Haiku
 //
-//  Created by John Nguyen on 13/12/2014.
+//  Created by John Nguyen on 19/12/2014.
 //  Copyright (c) 2014 John Nguyen. All rights reserved.
 //
 
-#import "HKInboxViewController.h"
+#import "HKSettingsViewController.h"
 #import "SWRevealViewController.h"
 
-@interface HKInboxViewController ()
+@interface HKSettingsViewController ()
 
 @end
 
-@implementation HKInboxViewController
+@implementation HKSettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
+
 	[self setupViewController];
 }
 
@@ -42,7 +42,7 @@
 	[self.navigationItem setLeftBarButtonItem:leftButton];
 	
 	// Set nav bar title
-	[self.navigationItem setTitle:@"Inbox"];
+	[self.navigationItem setTitle:@"Settings"];
 	
 	// Set gestures (swipe to reveal menu)
 	[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];

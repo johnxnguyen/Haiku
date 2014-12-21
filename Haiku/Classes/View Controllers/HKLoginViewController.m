@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @property (strong, nonatomic) NSMutableData *imageData;
+@property (strong, nonatomic) PFUser *currentUser;
 
 @end
 
@@ -29,7 +30,9 @@
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
-	NSLog(@"View did appear");
+	// Clear textfields
+	_emailTextField.text = @"";
+	_passwordTextField.text = @"";
 	
 	// Already logged in?
 	if ([PFUser currentUser]) {
@@ -84,24 +87,9 @@
 			
 			// Segue to inbox
 			[self performSegueWithIdentifier:@"RevealViewControllerSegue" sender:nil];
-			NSLog(@"segue called");
 			
 		} else {
-			if (error) {
-				// Error
-				NSLog(@"Error logging in: %@", error.userInfo);
-				
-				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!"
-																message:@"Something went wrong. Please try again."
-															   delegate:nil
-													  cancelButtonTitle:@"Ok"
-													  otherButtonTitles:nil];
-				[alert show];
-				
-			} else {
-				// Cancelled
-				NSLog(@"The user cancelled FB authentication");
-			}
+			[self handleAuthError:error];
 		}
 	}];
 }
@@ -123,21 +111,19 @@
 	[_imageData appendData:data];
 }
 
-// DID FINISH DOWNLOADING
+// DID FINISH DOWNLOADING - save image to current user
 //
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	
 	// Upload to Parse
 	if (_imageData) {
 		
-		PFFile *image = [PFFile fileWithData:_imageData];
-		[[PFUser currentUser] setObject:image forKey:kHKUserImage];
-		[[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+		PFFile *image = [PFFile fileWithName:@"profileImage" data:_imageData];
+		[image saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
 			
-			if (!error) {
-				NSLog(@"Image successfully uploaded to Parse");
-			} else {
-				NSLog(@"Error Saving User: %@", error.userInfo);
+			if (succeeded) {
+				[_currentUser setObject:image forKey:kHKUserImage];
+				[_currentUser saveEventually];
 			}
 		}];
 		
@@ -168,25 +154,18 @@
 			NSString *name = userData[@"name"];
 			NSString *email = userData[@"email"];
 			
-			[self downloadImageWithFacebookId:facebookID];
-			
 			// Save details to Parse
-			PFUser *currentUser = [PFUser currentUser];
+			_currentUser = [PFUser currentUser];
+						
+			[_currentUser setEmail:email];
 			
 			// When first created, set default display name
-			if ([currentUser isNew]) {
-				[currentUser setObject:name forKey:kHKUserDisplayName];
+			if ([_currentUser isNew]) {
+				[_currentUser setObject:name forKey:kHKUserDisplayName];
 			}
 			
-			[currentUser setEmail:email];
-			[currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-				
-				if (!error) {
-					NSLog(@"User successfully updated");
-				} else {
-					NSLog(@"Error Saving User: %@", error.userInfo);
-				}
-			}];
+			// Start image download, save user when finished
+			[self downloadImageWithFacebookId:facebookID];
 		}
 	}];
 	
@@ -210,6 +189,43 @@
 	if (!connection) {
 		NSLog(@"Error: Failed to download image from Facebook");
 	}
+}
+
+// HANDLE FB AUTHENTICATION ERROR
+//
+- (void)handleAuthError:(NSError*)error {
+	
+	NSString *alertTitle;
+	NSString *alertText;
+	
+	// Error requires user action outside of app
+	if ([FBErrorUtility shouldNotifyUserForError:error] == YES) {
+	
+		alertTitle = @"Something went wrong";
+		alertText = [FBErrorUtility userMessageForError:error];
+		[self showMessage:alertText withTitle:alertTitle];
+		
+	} else {
+		// Need to find out more info to handle error within app
+		if ([FBErrorUtility errorCategoryForError:error] == FBErrorCategoryUserCancelled) {
+			NSLog(@"User cancelled");
+		} else {
+			// All other errors need retries. Show generic message
+			alertTitle = @"Something went wrong";
+			alertText = @"Please retry";
+			[self showMessage:alertText withTitle:alertTitle];
+		}
+	}
+}
+
+// SHOW MESSAGE
+//
+- (void)showMessage:(NSString*)message withTitle:(NSString*)title {
+	
+	[[[UIAlertView alloc] initWithTitle:title
+								message:message delegate:nil
+					  cancelButtonTitle:@"Ok"
+					  otherButtonTitles:nil] show];
 }
 
 @end

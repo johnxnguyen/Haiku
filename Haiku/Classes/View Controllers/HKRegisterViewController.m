@@ -195,7 +195,7 @@
 - (BOOL)isDisplayNameValid:(NSString*)displayName {
 	
 	// cant begin with a space, at least 1 char long
-	NSString *regExp = @"^[^\\s]";
+	NSString *regExp = @"^[^\\s]+";
 	NSPredicate *test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regExp];
 	return [test evaluateWithObject:displayName];
 }

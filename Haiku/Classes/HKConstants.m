@@ -13,7 +13,7 @@
 #pragma User Class
 
 NSString *const kHKUserProfile			= @"profile";
-NSString *const kHKUserImage			= @"image";
+NSString *const kHKUserImage			= @"profileImage";
 NSString *const kHKUserFriends			= @"friends";
 NSString *const kHKUserDisplayName		= @"displayName";
 

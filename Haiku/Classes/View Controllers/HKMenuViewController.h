@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HKMenuViewController : UIViewController
+@interface HKMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

@@ -38,6 +38,8 @@
 		EEE288A21A324CF6000E5E7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE288A11A324CF6000E5E7B /* Images.xcassets */; };
 		EEE288A51A324CF6000E5E7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE288A31A324CF6000E5E7B /* LaunchScreen.xib */; };
 		EEE288B11A324CF6000E5E7B /* HaikuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE288B01A324CF6000E5E7B /* HaikuTests.m */; };
+		EEFE74D91A4431EC00C85953 /* HKFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFE74D81A4431EC00C85953 /* HKFriendsViewController.m */; };
+		EEFE74DD1A44323500C85953 /* HKSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFE74DC1A44323500C85953 /* HKSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,10 @@
 		EEE288AA1A324CF6000E5E7B /* HaikuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaikuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE288AF1A324CF6000E5E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE288B01A324CF6000E5E7B /* HaikuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaikuTests.m; sourceTree = "<group>"; };
+		EEFE74D71A4431EC00C85953 /* HKFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKFriendsViewController.h; path = "Classes/View Controllers/HKFriendsViewController.h"; sourceTree = "<group>"; };
+		EEFE74D81A4431EC00C85953 /* HKFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKFriendsViewController.m; path = "Classes/View Controllers/HKFriendsViewController.m"; sourceTree = "<group>"; };
+		EEFE74DB1A44323500C85953 /* HKSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKSettingsViewController.h; path = "Classes/View Controllers/HKSettingsViewController.h"; sourceTree = "<group>"; };
+		EEFE74DC1A44323500C85953 /* HKSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKSettingsViewController.m; path = "Classes/View Controllers/HKSettingsViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +244,8 @@
 				EE2026B21A34BDA8009731FF /* Login & Register */,
 				EE1517A31A3C617B0053AC9E /* Menu */,
 				EE1517A41A3C61870053AC9E /* Inbox */,
+				EEFE74DA1A4431F300C85953 /* Friends */,
+				EEFE74DE1A44323E00C85953 /* Settings */,
 				EE1517991A3C60590053AC9E /* Reveal View Controller */,
 				EEE288911A324CF6000E5E7B /* Supporting Files */,
 			);
@@ -274,6 +282,24 @@
 				EEE288AF1A324CF6000E5E7B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEFE74DA1A4431F300C85953 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				EEFE74D71A4431EC00C85953 /* HKFriendsViewController.h */,
+				EEFE74D81A4431EC00C85953 /* HKFriendsViewController.m */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		EEFE74DE1A44323E00C85953 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EEFE74DB1A44323500C85953 /* HKSettingsViewController.h */,
+				EEFE74DC1A44323500C85953 /* HKSettingsViewController.m */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,12 +439,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1517981A3C60520053AC9E /* SWRevealViewController.m in Sources */,
+				EEFE74D91A4431EC00C85953 /* HKFriendsViewController.m in Sources */,
 				EE11FFD61A385AF700ADBC2D /* HKConstants.m in Sources */,
 				EE1517A21A3C61450053AC9E /* HKMenuViewController.m in Sources */,
 				EE11FFDC1A38675D00ADBC2D /* HKRegisterViewController.m in Sources */,
 				EEE288971A324CF6000E5E7B /* AppDelegate.m in Sources */,
 				EEE2889A1A324CF6000E5E7B /* Haiku.xcdatamodeld in Sources */,
 				EE11FFD91A3866B200ADBC2D /* HKLoginViewController.m in Sources */,
+				EEFE74DD1A44323500C85953 /* HKSettingsViewController.m in Sources */,
 				EEE288941A324CF6000E5E7B /* main.m in Sources */,
 				EE15179F1A3C61170053AC9E /* HKInboxViewController.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <ParseUI/ParseUI.h>
 
 
 @interface AppDelegate ()
@@ -27,6 +28,9 @@
 	
 	
 	[self setupAppAppearance];
+	
+	// Force ParseUI class to load, so it can be referenced later
+	[PFImageView class];
 	
 	
 	return YES;
